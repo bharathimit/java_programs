@@ -38,6 +38,14 @@ public class BinaryTree {
 			System.out.print(node.data+" - ");
 		}
 	}
+	
+	public void printAsList(){
+		Node current = root;
+		while(current!=null){
+			System.out.println(current.data);
+			current = current.right;
+		}
+	}
 }
 
 class Node{
